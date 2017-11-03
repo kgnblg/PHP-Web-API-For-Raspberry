@@ -11,6 +11,7 @@ require_once "dbconnection.php";
 
     public function Run(){
       $paramList = explode('/', $this->params);
+
       if ($paramList[0] == "add") {
         $this->addUser(@$_POST['userName'], @$_POST['userEmail'], @$_POST['userPass']);
       }elseif ($paramList[0] == "del") {
